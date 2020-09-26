@@ -53,7 +53,7 @@ library(plyr)
         setforMeanandStd <- finaldataset[ , mean_and_std == TRUE]
         
 # 3. Use descriptive activity names
-        setWithActivityNames <- merge(setforMeanandStd, activityLabels,
+        setWithActivityNames <- merge(activityLabels, setforMeanandStd,
                                       by = "activityID",
                                       all.x = TRUE)
         
